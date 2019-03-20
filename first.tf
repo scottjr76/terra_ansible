@@ -14,7 +14,7 @@ resource "aws_instance" "instance" {
   connection{
       type = "ssh"
       user = "ubuntu"
-      private_key = "${file("/home/ubuntu/.ssh/global_key")}"
+      private_key = "${file("/var/lib/jenkins/.ssh/global_key")}"
 
     }
  }
